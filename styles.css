@@ -16,6 +16,10 @@ body {
     margin: 0 auto;
 }
 
+main {
+    margin: 0 auto;
+}
+
 
 .intro {
     display: flex;
@@ -90,4 +94,11 @@ body {
 .section__img {
     display: flex;
     justify-content: flex-end;
+}
+
+/*Break point for tablet screens*/
+@media (min-width: 600px) {
+    body {
+        max-width: 600px;
+    }
 }
