@@ -50,7 +50,7 @@ main {
 
 
 .section-style {
-    margin: 3em;
+    margin: 2em;
     margin-top: 0;
     margin-bottom: 2em;
 
@@ -58,7 +58,7 @@ main {
     border-top-style: solid;
     border-top-width: 0.40em;
 
-    box-shadow: 6px 5px 30px 1px hsl(207, 22%, 82%);
+    box-shadow: 1px 8px 15px 1px hsl(208, 41%, 89%);
 }
 
 .section-one {
@@ -78,7 +78,7 @@ main {
 }
 
 .section__container {
-    padding: 2em;
+    padding: 1.5em;
 }
 
 .section__text {
