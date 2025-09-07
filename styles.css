@@ -14,6 +14,7 @@
 body {
     font-family: 'Poppins';
     margin: 0 auto;
+    max-width: 600px;
 }
 
 main {
@@ -48,9 +49,9 @@ main {
 .section-style {
     margin: 3em 2em;
 
-    border-radius: 0.30em;
+    border-radius: 0.40em;
     border-top-style: solid;
-    border-top-width: 0.25em;
+    border-top-width: 0.40em;
 
     box-shadow: 6px 10px 50px 1px hsl(207, 9%, 81%);
 }
@@ -97,8 +98,7 @@ main {
 }
 
 /*Break point for tablet screens*/
-@media (min-width: 600px) {
-    body {
-        max-width: 600px;
-    }
+
+@media (min-width: 900px) {
+    
 }
