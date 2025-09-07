@@ -25,9 +25,11 @@ main {
 .intro {
     display: flex;
     flex-direction: column;
-    margin: 3em 2em;
+    margin: 0 auto;
+    padding: 3em 2em;
 
     text-align: center;
+    color: hsl(234, 12%, 34%);
 }
 
 .intro__header-one {
@@ -46,14 +48,17 @@ main {
     font-size: 15px;
 }
 
+
 .section-style {
-    margin: 3em 2em;
+    margin: 3em;
+    margin-top: 0;
+    margin-bottom: 2em;
 
     border-radius: 0.40em;
     border-top-style: solid;
     border-top-width: 0.40em;
 
-    box-shadow: 6px 10px 50px 1px hsl(207, 9%, 81%);
+    box-shadow: 6px 5px 30px 1px hsl(207, 22%, 82%);
 }
 
 .section-one {
@@ -97,8 +102,56 @@ main {
     justify-content: flex-end;
 }
 
-/*Break point for tablet screens*/
-
+/*Break point for larger screens like desktop*/
 @media (min-width: 900px) {
-    
+    body {
+        max-width: 1400px;
+    }
+
+
+    .intro {
+        max-width: 600px;
+    }
+
+    .intro__header-one, .intro__header-two {
+        font-size: 2.4rem;
+    }
+
+    .intro__text {
+        font-size: 1rem;
+    }
+
+
+    .card-grid {
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 0 2rem;
+
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        '. two .'
+        'one two four'
+        'one three four'
+        '. three .';
+    }
+
+    .section-style {
+        margin: 0 auto;
+    }
+
+    .section-one {
+        grid-area: one;
+    }
+    .section-two {
+        grid-area: two;
+    }
+    .section-three {
+        grid-area: three;
+    }
+    .section-four {
+        grid-area: four;
+    }
+
 }
